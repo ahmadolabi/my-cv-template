@@ -1,11 +1,14 @@
 {
   "name": "my-cv-template",
+  "homepage": "https://ahmadolabi.github.io/my-cv-template",
   "version": "1.0.0",
   "description": "<a href=\"https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/\" target=\"_blank\"><img src=\"https://themes.3rdwavemedia.com/wp-content/uploads/2021/07/Orbit-Bootstrap-Resume-CV-Template-for-Developers.png\" alt=\"Bootstrap 5 Resume/CV Template for Developers\" /></a>",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server"
+    "start": "http-server",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
